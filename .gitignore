@@ -1,0 +1,9 @@
+/server/node_modules/
+
+# compiled output
+/client/build/
+/client/build-OKchrome/
+/client/dist/
+
+# misc
+/client/npm-debug.log

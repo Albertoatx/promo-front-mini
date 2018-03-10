@@ -1,0 +1,602 @@
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  padding: 0px;  /* OJO */
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.container {
+ /* max-width: 1024px;  /* cambie esta propiedad para ver más info en las filas de las tablas */
+ /* width: 85%;  */ /* problema navbar, 2 lineas */
+}
+
+/* So that the nav bar does not cover the content when desktop size */
+#main {
+  margin-top:12px;
+  padding-top: 12px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+/*
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+} */
+
+/* Custom page header */
+.header {
+ /* border-bottom: 1px solid #e5e5e5; */
+  margin-bottom: 30px;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+  margin-top: 20px;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+.jumbotron .mainbuttons {   /* mio */
+  display: inline-block;
+}
+
+.jumbotron .lead img {   /* mio */
+  max-height:65%;
+  width:65%;
+}
+
+#js-navbar-collapse {  /* mio */
+  font-size: 16px; 
+  /*background: red;
+  -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+  /* animation: mymove 5s infinite; */
+}
+  
+@-webkit-keyframes mymove { /* Animacion "mymove" para Chrome, Safari, Opera */
+    50% {background-color: #778899;}
+}
+
+/* Supporting marketing content */
+.marketing,.hero-unit {
+  margin: 40px 0;
+  text-align: center;  /* mio */
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+.obrasbuttons {   /* para mostrar varios botones en fila al consultar listado de obras */
+  display: inline;
+}
+
+/* Para ventana modal */
+/*
+.modal-body .ng-valid{      
+    border: thin solid #090;
+}
+.modal-body .ng-invalid{
+    border: thin solid #990000;
+} */
+
+/* para alinear campos del formulario en la ventana modal */
+/*
+.modal-body input{  
+    display: block;
+    width: auto;
+    height: auto;
+} */
+
+.large-Modal .modal-dialog{
+  width: 650px; 
+  /* max-height: 100vh; */ /* no hace nada */
+  position: relative;
+  /* top:0; */ /* comment to avoid being on top of window */
+  bottom: 0; 
+  left: 0; 
+  right: 0;
+  margin: 20vh auto;  /*  to center it in height and wide */
+  overflow: auto; 
+}
+
+/* OJO
+.large-Modal .modal-content {
+    max-height: 800px;
+    overflow: auto;
+}
+*/ 
+.modal-body .row {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.modal-header #modal-title{
+  text-align: center;
+}
+
+
+.scr-title{
+    color: #8f746c;
+    padding: 10px 0px;
+    border: 2px solid #8f746c;
+    margin: 10px auto; /* to center it use 'auto' for right-left margin */
+    border-radius: 7px;
+    text-align: center; 
+    /*
+    position: fixed;
+    top: 33px;
+    width: 75%; */
+}
+
+.scr-info{
+    color: #242729;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 3px; 
+    font-style: italic;
+    text-align: center;
+    background-color: #f7e6ff;
+}
+
+
+/* styles for Google maps window -------------------------------------*/
+/* to center it use 'auto' for right-left margin */ 
+#map{
+  height: 400px;
+  width: 98%;
+  margin: 10px auto; 
+  border: 2px solid #8f746c;
+  border-radius: 5px;
+  /*overflow: visible;*/
+}
+
+/*
+#map .active{
+  height:400px;
+  width:100%;
+  border: 2px solid #8f746c;
+  border-radius: 5px;
+  margin: 3px auto;  
+}*/
+
+/* form styles --------------------------------------------------*/
+fieldset{
+  padding: 5px;
+  margin: 3px;
+  border: 1px solid #8f746c;
+}
+
+fieldset .form-group{
+  padding: 5px;
+  margin: 3px;
+}
+
+/*
+legend{
+  padding: 10px;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+} */
+
+
+/*
+.imagefront{
+  height: 300px;
+  width: 300px;
+  background: url(../images/obras-front01.jpg) no-repeat center center;
+  background-size: 85%;
+}
+*/
+
+input[type="email"], input[type="telephone"] {
+  display: block; /* separate lines for each one */
+  margin-bottom: 15px;
+  padding: 10px 10px 10px 50px; /* 50 px to give space for images */
+  border: 0;
+  border-radius: 4px;
+  background: url(../images/inputs.png) no-repeat;
+ /* color: #222; */ /* the color of the text we write in the input fields */
+  float: left; /* tutorial6 */
+  clear: both;
+}
+
+/* the black envelope in the image */
+input[type="email"]{
+  background-position: 7px 8px;  
+}
+
+/* the black phone in the image */
+input[type="telephone"]{
+  background-position: 7px -58px; 
+}
+
+/* give validation styles to forms --------------------------------------*/
+
+#promotorForm input.ng-invalid.ng-touched, 
+#obraForm input.ng-invalid.ng-touched,
+#userForm input.ng-invalid.ng-touched,
+#userDetailForm input.ng-invalid.ng-touched {
+ /* border: 1px solid red; */
+  border-left: 5px solid red;
+  border-bottom: 1px solid #E82E2E; 
+  border-right: 1px solid #E82E2E;
+  border-top: 1px solid #E82E2E;
+}
+
+#promotorForm input.ng-valid.ng-touched,
+#obraForm input.ng-valid.ng-touched,
+#userForm input.ng-valid.ng-touched,
+#userDetailForm input.ng-valid.ng-touched{
+  border-left: 5px solid green;
+}
+
+/* disable inputs with attribute disabled, such as buttons in form */
+input[disabled="disabled"]{
+  opacity: 0.5;
+  cursor: not-allowed; 
+}
+
+/* style our help validation messages */
+.form-group small{
+  color: red;
+  display: block;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* override Bootstrap help validation messages */
+.help-block{
+  text-align: center;
+  font-size: 14px;
+}
+
+/* table sorting ----------*/
+table{
+    border: 1px solid #8f746c;
+    /*border-radius: 15px; */  /* NO LO APLICA */
+}
+
+table thead{
+    background-color: #F2C9E2;
+    border-radius: 15px;
+    border-bottom: 1px solid #8f746c; /* NO SE VE */
+}
+
+th {
+    cursor: pointer;
+}
+
+.sort-icon {
+    font-size: 9px;
+    margin-left: 5px;
+}
+
+/* Animation ---------------------------*/
+/* The starting CSS styles for the enter animation */
+#main.ng-enter {
+  transition:0.5s linear all;
+  opacity:0;
+}
+
+/* The finishing CSS styles for the enter animation */
+#main.ng-enter.ng-enter-active {
+  opacity:1;
+}
+
+
+/* ESTILOS PARA LA PANTALLA DE LOGIN ***********************************************/
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/*********************************************************************/
+.form-register {
+  /*max-width: 660px;
+  padding: 15px;
+  margin: 0 auto; */
+}
+
+.form-register .form-group {
+  /*display: inline-block;
+  vertical-align: middle;    */
+}
+
+
+
+/* Estilo para clases propias de angular (como ng-odd) ***************/
+.odd {
+  background-color: #f2f9ff;
+  
+}
+.even {
+  background-color: #eceff3;
+}
+
+/* Estilos de otras APP, prueba visual *******************************/
+a {
+  color: #00B7FF;
+}
+
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+
+.navbar-right {
+  margin-right: 0px; 
+}
+
+/* Responsive: MEDIA QUERIES -------------------------------------------------*/
+/* Remember rules at the bottom overrides rules at the top                    */
+/* Apply these rules to all screens which have a minimum width of 1441 pixels */
+@media screen and (min-width: 1441px) and (max-width: 2712px) {
+  .container {
+     width: 75%; 
+  }  
+}
+
+
+/* LAPTOPS */
+/* Apply these rules to all screens which have a minimum width of 992 pixels */
+@media screen and (min-width: 992px) and (max-width: 1440px) {
+  .container {
+   /* width: 80%; */ /* problema con nav-bar, 2 lineas */
+    max-width: 1024px;  
+  }
+}
+
+
+/* Change "grid float breakpoint" so that navbar' stays collapsed until screen is wide enough */
+/* For Bootstrap 3.3.x, this is the working CSS to override the "navbar breakpoint". 
+/* Set 'max-width' to the pixel dimension at which you want the navbar to collapse... */
+/*      Note: This CSS only works for anything over 768px. */
+/* Apply these rules to all screens which between 768px and 992px */
+@media (max-width: 992px) { 
+
+  .container {
+    width: 90%;
+  }
+
+  /* don't want padding and margin for #main in this resolution */
+  #main {
+      margin-top:0px;
+      padding-top: 0px;
+  }
+
+  .navbar-header {
+      float: none;
+  }
+  .navbar-left,.navbar-right {
+      float: none !important; 
+   /* float: right !important; */
+   /*   margin-right: 0px;  */
+  }
+  .navbar-toggle {
+      display: block;
+  }
+  .navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+      position:static; /*/* avoid dropdown menu covering content when collapsing navbar */
+  }
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+  .navbar-nav {
+      float: none!important; 
+      margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+      float: none; 
+  }
+  .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  .collapse.in{
+      display:block !important;
+  }
+
+  .navbar-nav > li > a { /* mio: to have app menu on the center of the dropdown menu */
+    text-align: center;
+  }  
+
+  .navbar-text { /* mio, to have user session on the center of the dropdown menu */
+    text-align: right;
+  }
+
+  .navbar-brand { /* mio: to have the title of the navbar on the right when menu dropped */
+    float: right;
+  }
+}
+
+
+/* FOR TABLETS */
+/* Apply these rules to all screens which between 480px and 768px */
+@media screen and (max-width: 768px) {
+
+  .container {
+    width: 90%;
+  }
+
+  /* Remove the padding we set earlier */
+  .marketing,
+  .footer {
+    padding-left: 3px;
+    padding-right: 3px;
+  } 
+
+  .header {
+    margin-bottom: 3px;
+  }
+
+  /* VERY IMPORTANT: avoid dropdown menu covering content when viewing small screens */
+  .navbar-fixed-top {
+    position: static;
+  }
+
+  /* don't want padding and margin for #main in this resolution */
+  #main {
+    margin-top:0px;
+    padding-top: 0px;
+  }
+
+  .jumbotron .lead img {   /* mio, make image bigger when in small screens */
+    max-height:85%;
+    width:85%;
+  }
+
+  /* Instead of using a %, the units vh set it to a percent of the viewport (browser window) size. */
+  .modal-dialog{
+    max-width: 450px;
+    width: auto; 
+    max-height: 95vh; 
+  }
+
+  .modal-header #modal-title{
+    font-size: 26px;
+  }
+
+  .modal-body .form-group {
+     margin-bottom: 8px;  /* override less value of 15px */
+  }
+}
+
+
+
+/* FOR MOBILES ----------- */
+/* Apply these rules to all screens which up to 480px (check screens above 320px) */
+@media screen and (max-width: 480px) {
+
+  .container {
+    width: 98%;
+  }
+
+  /* VERY IMPORTANT! to avoid the table going out container width and overflowing */
+  .table {
+    table-layout: fixed;
+    word-wrap: break-word;
+    max-width: 99%;
+  }
+  
+  /* titles in tabel top aligned */
+  .table > thead > tr > th {
+    vertical-align: top;
+  }
+
+  .marketing,
+  .footer {
+    padding-left: 0.5px;
+    padding-right: 0.5px;
+  } 
+
+ 
+  .jumbotron .lead img {   
+    max-height:95%;
+    width:95%;
+  }
+  
+
+  .jumbotron .btn {
+    font-size: 14px;
+    padding: 14px 10px;  
+  } 
+
+    
+  .modal-dialog{
+    max-width: 300px;
+    width: auto; 
+    max-height: 100vh; 
+  }
+}
